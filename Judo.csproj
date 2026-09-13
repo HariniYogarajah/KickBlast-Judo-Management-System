@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2783B0F8-76C3-4EAA-8F61-A4D10A98FC4D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Judo</RootNamespace>
+    <AssemblyName>Judo</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminClass.cs" />
+    <Compile Include="Athlete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Athlete.Designer.cs">
+      <DependentUpon>Athlete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AthleteClass.cs" />
+    <Compile Include="Ath_Competiton.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ath_Competiton.Designer.cs">
+      <DependentUpon>Ath_Competiton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ath_CompetitonClass.cs" />
+    <Compile Include="Ath_pri_coaching.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ath_pri_coaching.Designer.cs">
+      <DependentUpon>Ath_pri_coaching.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ath_pri_coachingClass.cs" />
+    <Compile Include="Calculation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calculation.Designer.cs">
+      <DependentUpon>Calculation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalculationClass.cs" />
+    <Compile Include="CommonClass.cs" />
+    <Compile Include="Competition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Competition.Designer.cs">
+      <DependentUpon>Competition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CompetitionClass.cs" />
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Monthly _pay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Monthly _pay.Designer.cs">
+      <DependentUpon>Monthly _pay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Monthly _payClass.cs" />
+    <Compile Include="Private_coaching.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Private_coaching.Designer.cs">
+      <DependentUpon>Private_coaching.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Private_coachingClass.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Training plan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Training plan.Designer.cs">
+      <DependentUpon>Training plan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Training planClass.cs" />
+    <Compile Include="Weight _catagory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Weight _catagory.Designer.cs">
+      <DependentUpon>Weight _catagory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Weight _catagoryClass.cs" />
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Athlete.resx">
+      <DependentUpon>Athlete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ath_Competiton.resx">
+      <DependentUpon>Ath_Competiton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ath_pri_coaching.resx">
+      <DependentUpon>Ath_pri_coaching.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calculation.resx">
+      <DependentUpon>Calculation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Competition.resx">
+      <DependentUpon>Competition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Monthly _pay.resx">
+      <DependentUpon>Monthly _pay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Private_coaching.resx">
+      <DependentUpon>Private_coaching.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Training plan.resx">
+      <DependentUpon>Training plan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Weight _catagory.resx">
+      <DependentUpon>Weight _catagory.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\judo edited.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
